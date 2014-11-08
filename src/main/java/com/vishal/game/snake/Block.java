@@ -1,6 +1,8 @@
 package com.vishal.game.snake;
 
 public class Block {
+	
+
 	public static final int BLOCK_SIZE = 10;
 
 	int x;
@@ -29,6 +31,11 @@ public class Block {
 
 	public void setY(int y) {
 		this.y = y;
+	}
+	
+	@Override
+	public String toString() {
+		return "Block [x=" + x + ", y=" + y + "]";
 	}
 
 }
