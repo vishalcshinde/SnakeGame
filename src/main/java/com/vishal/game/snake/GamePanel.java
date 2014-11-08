@@ -22,7 +22,6 @@ public class GamePanel extends JPanel {
 	List<Block> cherries = new ArrayList<Block>();
 
 	public GamePanel() {
-	    Random r = new Random();
 	    cherries.add(new Block(100, 100));
 		Timer t = new Timer(33, new ActionListener() {
 			int i = 0;
