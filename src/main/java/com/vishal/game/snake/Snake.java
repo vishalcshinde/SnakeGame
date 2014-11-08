@@ -27,18 +27,9 @@ public class Snake {
 		movemap.put(KeyEvent.VK_RIGHT, new RightMovement());
 		lstBlocks.add(new Block(100, 100));
 		movement = movemap.get(KeyEvent.VK_DOWN);
-		addBlock();
-		addBlock();
-		addBlock();
-		addBlock();
-		addBlock();
-		addBlock();
-		addBlock();
-		addBlock();
-		addBlock();
-		addBlock();
-		addBlock();
-		addBlock();
+		for(int i=0; i < 10; i++) {
+			addBlock();
+		}
 	}
 
 	public List<Block> getLstBlocks() {
