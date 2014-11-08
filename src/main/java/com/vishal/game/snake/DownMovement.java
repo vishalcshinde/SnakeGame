@@ -13,7 +13,6 @@ public class DownMovement extends DefaultMovement{
 		return  b.getY() + Block.BLOCK_SIZE;
 	}
 
-	@Override
 	public boolean isAllowed(KeyEvent keyEvent) {
 		return in(keyEvent.getKeyCode(), KeyEvent.VK_LEFT, KeyEvent.VK_RIGHT);
 	}

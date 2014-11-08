@@ -14,7 +14,6 @@ public class RightMovement extends DefaultMovement{
 		return block.getX() + Block.BLOCK_SIZE;
 	}
 	
-	@Override
 	public boolean isAllowed(KeyEvent keyEvent) {
 		return in(keyEvent.getKeyCode(), KeyEvent.VK_UP, KeyEvent.VK_DOWN);
 	}

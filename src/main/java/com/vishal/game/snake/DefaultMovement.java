@@ -4,14 +4,12 @@ import java.util.List;
 
 public abstract class DefaultMovement implements Movement {
 
-	@Override
 	public void move(List<Block> blocks) {
 		Block b = blocks.get(0); 
 		blocks.remove(0);
 		addBlock(blocks, b);
 	}
 	
-	@Override
 	public void addBlock(List<Block> lstBlocks) {
 		addBlock(lstBlocks, new Block());
 	}

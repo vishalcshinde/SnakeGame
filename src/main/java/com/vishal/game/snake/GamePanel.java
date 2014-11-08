@@ -20,7 +20,7 @@ public class GamePanel extends JPanel {
 	public GamePanel() {
 
 		Timer t = new Timer(33, new ActionListener() {
-			@Override
+			
 			public void actionPerformed(ActionEvent e) {
 				snake.move();
 				repaint();
